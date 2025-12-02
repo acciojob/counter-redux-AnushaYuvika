@@ -15,8 +15,19 @@ function Counter() {
       <span className="title">Counter App</span> <br /> <br />
 
       <div className="btn-box">
-        <button onClick={() => dispatch(increment())}>increment</button>
-        <button onClick={() => dispatch(decrement())}>decrement</button>
+        <button 
+            data-cy="btn-inc"
+            onClick={() => dispatch(increment())}
+          >
+            Increment
+          </button>
+
+          <button 
+            data-cy="btn-dec"
+            onClick={() => dispatch(decrement())}
+          >
+            Decrement
+          </button>
       </div>
     </div>
     </>
