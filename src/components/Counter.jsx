@@ -12,23 +12,21 @@ function Counter() {
       <div className="card">
       <h1>{count}</h1>
 
-      <span className="title">Counter App</span> <br /> <br />
+      {/* <span className="title">Counter App</span>  */}
 
-      <div className="btn-box">
         <button 
             data-cy="btn-inc"
             onClick={() => dispatch(increment())}
           >
-            Increment
+            increment
           </button>
 
           <button 
             data-cy="btn-dec"
             onClick={() => dispatch(decrement())}
           >
-            Decrement
+            decrement
           </button>
-      </div>
     </div>
     </>
   );
